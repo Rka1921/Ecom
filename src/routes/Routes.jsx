@@ -6,6 +6,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import { Home } from "../layouts/Home";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -14,8 +15,8 @@ export const router = createBrowserRouter([
       ),
     },
     {
-      path: "about",
-      element: <div>About</div>,
+      path: "home",
+      element:(<Home/>),
     },
   ]);
    export const Routing = () =>{

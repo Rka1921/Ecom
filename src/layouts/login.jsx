@@ -1,8 +1,10 @@
 import React from "react";
 import {Button} from "@nextui-org/react";
 import {Input} from "@nextui-org/react";
-import imga from '../assets/main.jpg'
+import imga from '../assets/main.jpg';
+import {useNavigate} from'react-router-dom';
 export const Login = () => {
+  const navigate = useNavigate();
 return(
     <>
     <div className="grid grid-cols-1 gap-44 md:grid-cols-2">
@@ -16,7 +18,7 @@ return(
   <div>
     <Input type="password" label="Password" />
     </div>
-    <Button className="bg-black col text-white">
+    <Button className="bg-black col text-white" onClick={() => navigate("/home")}>
       Continue
     </Button>
   </div>
